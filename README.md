@@ -6,9 +6,9 @@
 ### Dependencies installation
 1. ROS Noetic
 ```
-sudo apt-get install -y ros-kinetic-navigation
-sudo apt-get install -y ros-kinetic-robot-localization
-sudo apt-get install -y ros-kinetic-robot-state-publisher
+sudo apt-get install -y ros-noetic-navigation
+sudo apt-get install -y ros-noetic-robot-localization
+sudo apt-get install -y ros-noetic-robot-state-publisher
 ```
 ```
 echo "source /opt/ros/noetic/setup.bash" >> ~/.bashrc
