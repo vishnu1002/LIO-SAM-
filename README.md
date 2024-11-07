@@ -36,7 +36,7 @@ cd ..
 
 6. Build
 ```
-source /home/<username>/ROS/devel/setup.bash
+source /home/atom-focal/ROS/devel/setup.bash
 catkin_make
 ```
 
@@ -55,5 +55,5 @@ roslaunch lio_sam run.launch
 2.  Play existing bag files:
 
 ```
-rosbag play <your-bag>.bag -r 3
+rosbag play park_dataset.bag -r 3
 ```
