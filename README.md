@@ -36,7 +36,6 @@ cd ..
 
 6. Build
 ```
-source /home/atom-focal/ROS/devel/setup.bash
 catkin_make
 ```
 
@@ -47,6 +46,10 @@ Sample dataset from LIO-SAM
 -   **Garden dataset:**  [[Google Drive](https://drive.google.com/drive/folders/1gJHwfdHCRdjP7vuT556pv8atqrCJPbUq?usp=sharing)]
 
 1.  Run the launch file:
+
+```
+source /home/atom-focal/ROS/devel/setup.bash
+```
 
 ```
 roslaunch lio_sam run.launch
