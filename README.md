@@ -30,14 +30,15 @@ git clone https://github.com/TixiaoShan/LIO-SAM.git
 cd ..
 ```
 5. **Noetic build error fix!!!**
-- Configure the utility.h (`src\LIO-SAM\include\utility.h`) to use  `#include <opencv2/opencv.hpp>`  instead of  `#include <opencv/cv.h>`
-- Configure CMakeLists.txt (`src\LIO-SAM\CMakeLists.txt`) to use  `set(CMAKE_CXX_FLAGS "-std=c++14")`  instead of  `set(CMAKE_CXX_FLAGS "-std=c++11")`
-- In `utility.h` file, move  `#include <opencv2/opencv.hpp>`  after the  `pcl`  headers.
+- Configure the utility.h (`src\LIO-SAM\include\utility.h`)
+  - `#include <opencv/cv.h>` change to -->  `#include <opencv2/opencv.hpp>`
+  - move  `#include <opencv2/opencv.hpp>`  after the  `pcl`  headers.
+- Configure CMakeLists.txt (`src\LIO-SAM\CMakeLists.txt`)
+  - `set(CMAKE_CXX_FLAGS "-std=c++11")` change to --> `set(CMAKE_CXX_FLAGS "-std=c++14")`
 
 6. Build
 ```
 catkin_make clean
-catkin_make
 ```
 
 ### Running Dataset
