@@ -38,7 +38,7 @@ cd ..
 
 6. Build
 ```
-catkin_make clean
+catkin_make -j2
 ```
 
 ### Running Dataset
